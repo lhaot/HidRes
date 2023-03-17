@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>BanRes</title>
+    <meta charset="utf-8">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../lib/mdui/css/mdui.min.css"/>
+</head>
+
+<body>
+<div>
+    <form>
+        <div class="mdui-textfield">
+            <label for="regex_area" class="mdui-textfield-label">Regex</label>
+            <textarea id="regex_area" name="regex_area"
+                      class="mdui-textfield-input"
+                      placeholder="input your regex settings here"></textarea>
+            <div class="mdui-textfield-helper">each line for one regex</div>
+        </div>
+        <div id="btn_grp">
+            <button class="mdui-btn mdui-ripple mdui-btn-raised mdui-btn-dense"
+                    onclick="saveOptions()">
+                Save
+            </button>
+        </div>
+    </form>
+</div>
+
+<br/>
+
+<script src="options.js"></script>
+<script src="../lib/mdui/js/mdui.min.js"></script>
+
+</body>
+
+</html>
